@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Squirrel-Codes</title>
+<link rel="stylesheet" href="../index.css">
+<link rel="shortcut icon" href="../images/logo-dark.svg" type="image/x-icon">
+</head>
+<body>
+
+<header class="sticky">
+<a href="index.html" class="webname">
+<img src="../images/logo-dark.svg" alt="">
+Squirrel<span class="primary-color">Codes</span>
+</a>
+<nav>
+<a href="../index.html">Home</a>
+<a href="dbms1.html" class="active">DBMS</a>
+<a href="../plsql-tutorial/plsql1.html">PL/SQL</a>
+<a href="../about.html" >About</a>
+</nav>
+</header>
+
+<h2 class="center tutorial">DBMS & MySQL Tutorial</h2>
+<hr>
+<div class="content-box">
+    <div class="sidebar">
+        <a class="primary-color">Table of Contents</a>
+        <a href="dbms1.html" class="sidelinks">What is DBMS?</a>
+        <a href="dbms2.html" class="sidelinks">Data Models</a>
+        <a href="dbms3.html" class="sidelinks">Schemas and Instances</a>
+        <a href="dbms4.html" class="sidelinks ">DBMS Architecture</a>
+        <a href="dbms5.html" class="sidelinks">Database Independence</a>
+        <a href="dbms6.html" class="sidelinks">Database Languages</a>
+        <a href="dbms7.html" class="sidelinks">12 Codd's Rule RDBMS</a>
+        <a href="dbms8.html" class="sidelinks">ER Model</a>
+        <a href="dbms9.html" class="sidelinks">MySQL features</a>
+        <a href="dbms10.html" class="sidelinks"> MySQL Database</a>
+        <a href="dbms11.html" class="sidelinks">MySQL Table</a>
+        <a href="dbms12.html" class="sidelinks">MySQL Constraints</a>
+        <a href="dbms13.html" class="sidelinks">DML Commands</a>
+        <a href="dbms14.html" class="sidelinks">MySQL Clauses</a>
+        <a href="dbms15.html" class="sidelinks sideactive">MySQL Views</a>
+        <a href="dbms16.html" class="sidelinks">MySQL Conditions</a>
+        <a href="dbms17.html" class="sidelinks">MySQL Keys</a>
+    </div>
+    <div class="content">
+        <h3 class="main">MySQL Views</h3>
+<p>A view is a database object that has no values. Its contents are based on the base table. It contains rows and columns similar to the real table. In MySQL, the View is a virtual table created by a query by joining one or more tables. It is operated similarly to the base table but does not contain any data of its own. The View and table have one main difference that the views are definitions built on top of other tables (or views). If any changes occur in the underlying table, the same changes reflected in the View also.</p>
+
+<p>
+    Syntax to create a view in MySQL:
+</p>
+    
+<pre class="code">
+CREATE [OR REPLACE] VIEW view_name AS    
+SELECT columns    
+FROM tables    
+[WHERE conditions];    
+</pre>
+<p>We can see the created view by using the following syntax:
+</p>
+<pre class="code">
+    SELECT * FROM view_name;    
+</pre>
+<p>Syntax used to delete the view:</p>
+
+<pre class="code">
+    DROP VIEW [IF EXISTS] view_name;   
+</pre> 
+<div class="toggle-page-btns">
+<a href="dbms14.html" class="button">&larr; Previous</a>
+<a href="dbms16.html" class="button">Next &rarr;</a>
+</div>
+    </div>
+</div>
+<footer>
+    Copyright &copy; 2023 Squirrel<span class="primary-color">Codes</span>
+</footer>
+</body>
+</html>

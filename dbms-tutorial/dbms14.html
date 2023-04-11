@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Squirrel-Codes</title>
+<link rel="stylesheet" href="../index.css">
+<link rel="shortcut icon" href="../images/logo-dark.svg" type="image/x-icon">
+</head>
+<body>
+
+<header class="sticky">
+<a href="index.html" class="webname">
+<img src="../images/logo-dark.svg" alt="">
+Squirrel<span class="primary-color">Codes</span>
+</a>
+<nav>
+<a href="../index.html">Home</a>
+<a href="dbms1.html" class="active">DBMS</a>
+<a href="../plsql-tutorial/plsql1.html">PL/SQL</a>
+<a href="../about.html" >About</a>
+</nav>
+</header>
+
+<h2 class="center tutorial">DBMS & MySQL Tutorial</h2>
+<hr>
+<div class="content-box">
+    <div class="sidebar">
+        <a class="primary-color">Table of Contents</a>
+        <a href="dbms1.html" class="sidelinks">What is DBMS?</a>
+        <a href="dbms2.html" class="sidelinks">Data Models</a>
+        <a href="dbms3.html" class="sidelinks">Schemas and Instances</a>
+        <a href="dbms4.html" class="sidelinks ">DBMS Architecture</a>
+        <a href="dbms5.html" class="sidelinks">Database Independence</a>
+        <a href="dbms6.html" class="sidelinks">Database Languages</a>
+        <a href="dbms7.html" class="sidelinks">12 Codd's Rule RDBMS</a>
+        <a href="dbms8.html" class="sidelinks">ER Model</a>
+        <a href="dbms9.html" class="sidelinks">MySQL features</a>
+        <a href="dbms10.html" class="sidelinks"> MySQL Database</a>
+        <a href="dbms11.html" class="sidelinks">MySQL Table</a>
+        <a href="dbms12.html" class="sidelinks">MySQL Constraints</a>
+        <a href="dbms13.html" class="sidelinks">DML Commands</a>
+        <a href="dbms14.html" class="sidelinks sideactive">MySQL Clauses</a>
+        <a href="dbms15.html" class="sidelinks">MySQL Views</a>
+        <a href="dbms16.html" class="sidelinks">MySQL Conditions</a>
+        <a href="dbms17.html" class="sidelinks">MySQL Keys</a>
+    </div>
+    <div class="content">
+        <h3 class="main">MySQL Clauses</h3>
+        <h3>Where Clause</h3>
+        <p>MySQL WHERE Clause is used with SELECT, INSERT, UPDATE and DELETE clause to filter the results. It specifies a specific position where you have to do the operation.
+
+            Syntax:</p>
+<pre class="code">
+    WHERE conditions;  
+</pre>
+<p>For example : 
+</p>
+<img src="../images/mysql-where.svg" alt="">
+<h3>From Clause</h3>
+<p>The MySQL FROM Clause is used to select some records from a table. It can also be used to retrieve records from multiple tables using JOIN condition. As used in where clause</p>
+<pre class="code">
+    select * <span style="color:yellow;">from</span> fruits where price >50;
+</pre>
+
+
+<h3>MySQL ORDER BY Clause</h3>
+<p>The MYSQL ORDER BY Clause is used to sort the records in ascending or descending order.</p>
+<p>For example : (view fruits based on price from cheap to high)</p>
+<img src="../images/mysql-order.svg" alt="">
+
+<h3>MySQL GROUP BY Clause</h3>
+<p>
+    The MYSQL GROUP BY Clause is used to collect data from multiple records and group the result by one or more column. It is generally used in a SELECT statement.
+
+You can also use some aggregate functions like COUNT, SUM, MIN, MAX, AVG etc. on the grouped column. Syntax :
+</p>
+<pre class="code">
+    SELECT column_name(s)
+FROM table_name
+WHERE condition
+GROUP BY column_name(s)
+ORDER BY column_name(s);
+</pre>
+
+<img src="../images/mysql-groupby.svg" alt="">
+<h3>Having Clause</h3>
+<p>The HAVING clause was added to SQL because the WHERE keyword cannot be used with aggregate functions.</p>
+<pre class="code">
+SELECT column_name(s)
+FROM table_name
+WHERE condition
+GROUP BY column_name(s)
+HAVING condition
+ORDER BY column_name(s);
+</pre>
+<div class="toggle-page-btns">
+<a href="dbms13.html" class="button">&larr; Previous</a>
+<a href="dbms15.html" class="button">Next &rarr;</a>
+</div>
+    </div>
+</div>
+<footer>
+    Copyright &copy; 2023 Squirrel<span class="primary-color">Codes</span>
+</footer>
+</body>
+</html>

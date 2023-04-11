@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Squirrel-Codes</title>
+<link rel="stylesheet" href="../index.css">
+<link rel="shortcut icon" href="../images/logo-dark.svg" type="image/x-icon">
+</head>
+<body>
+
+<header class="sticky">
+<a href="index.html" class="webname">
+<img src="../images/logo-dark.svg" alt="">
+Squirrel<span class="primary-color">Codes</span>
+</a>
+<nav>
+<a href="../index.html">Home</a>
+<a href="dbms1.html" class="active">DBMS</a>
+<a href="../plsql-tutorial/plsql1.html">PL/SQL</a>
+<a href="../about.html" >About</a>
+</nav>
+</header>
+
+<h2 class="center tutorial">DBMS & MySQL Tutorial</h2>
+<hr>
+<div class="content-box">
+    <div class="sidebar">
+        <a class="primary-color">Table of Contents</a>
+        <a href="dbms1.html" class="sidelinks">What is DBMS?</a>
+        <a href="dbms2.html" class="sidelinks">Data Models</a>
+        <a href="dbms3.html" class="sidelinks">Schemas and Instances</a>
+        <a href="dbms4.html" class="sidelinks ">DBMS Architecture</a>
+        <a href="dbms5.html" class="sidelinks">Database Independence</a>
+        <a href="dbms6.html" class="sidelinks">Database Languages</a>
+        <a href="dbms7.html" class="sidelinks">12 Codd's Rule RDBMS</a>
+        <a href="dbms8.html" class="sidelinks">ER Model</a>
+        <a href="dbms9.html" class="sidelinks">MySQL features</a>
+        <a href="dbms10.html" class="sidelinks"> MySQL Database</a>
+        <a href="dbms11.html" class="sidelinks">MySQL Table</a>
+        <a href="dbms12.html" class="sidelinks">MySQL Constraints</a>
+        <a href="dbms13.html" class="sidelinks sideactive">DML Commands</a>
+        <a href="dbms14.html" class="sidelinks">MySQL Clauses</a>
+        <a href="dbms15.html" class="sidelinks">MySQL Views</a>
+        <a href="dbms16.html" class="sidelinks">MySQL Conditions</a>
+        <a href="dbms17.html" class="sidelinks">MySQL Keys</a>
+    </div>
+    <div class="content">
+        <h3 class="main">MySQL DML Commands</h3>
+   
+<p>DML is an abbreviation of <strong>Data Manipulation Language</strong>.
+
+    The DML commands in Structured Query Language change the data present in the SQL database. We can easily access, store, modify, update and delete the existing records from the database using DML commands.</p>
+
+<p>Following are the four main DML commands in SQL:</p>
+<ul>
+    <li>SELECT Command</li>
+    <li>INSERT Command</li>
+    <li>UPDATE Command</li>
+    <li>DELETE Command</li>
+</ul>
+<h3>SELECT DML Command</h3>
+<p>The SELECT command shows the records of the specified table. It also shows the particular record of a particular column by using the WHERE clause.</p>
+<p> To view all records in th table , syntax is :</p>
+<pre class="code">
+    select * from table_name;
+</pre>
+<p> To view records on a specific condition, syntax is :</p>
+<pre class="code">
+    SELECT column_Name_1, column_Name_2, ….., column_Name_N FROM Name_of_table;  
+</pre>
+<p>For example :</p>
+<img src="../images/mysql-select.svg" alt="">
+<h3>INSERT DML Command</h3>
+<p>INSERT is another most important data manipulation command in Structured Query Language, which allows users to insert data in database tables.</p>
+<p>Syntax of insert command</p>
+<pre class="code">
+   INSERT INTO TABLE_NAME ( column_Name1 , column_Name2 , column_Name3 , .... column_NameN )  VALUES (value_1, value_2, value_3, .... value_N ) ; 
+</pre>
+
+<h3>UPDATE DML Command</h3>
+<p>UPDATE is another most important data manipulation command in Structured Query Language, which allows users to update or modify the existing data in database tables.</p>
+<p>Syntax of update command</p>
+<pre class="code">
+    UPDATE Table_name SET [column_name1= value_1, ….., column_nameN = value_N] WHERE CONDITION;  
+</pre>
+
+<h3>Delete DML Command</h3>
+<p>DELETE is a DML command which allows SQL users to remove single or multiple existing records from the database tables.
+
+    This command of Data Manipulation Language does not delete the stored data permanently from the database. We use the WHERE clause with the DELETE command to select specific rows from the table.</p>
+<pre class="code">
+    DELETE FROM Table_Name WHERE condition;    
+</pre>
+
+
+<div class="toggle-page-btns">
+<a href="dbms12.html" class="button">&larr; Previous</a>
+<a href="dbms14.html" class="button">Next &rarr;</a>
+</div>
+    </div>
+</div>
+<footer>
+    Copyright &copy; 2023 Squirrel<span class="primary-color">Codes</span>
+</footer>
+</body>
+</html>

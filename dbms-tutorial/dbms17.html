@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Squirrel-Codes</title>
+<link rel="stylesheet" href="../index.css">
+<link rel="shortcut icon" href="../images/logo-dark.svg" type="image/x-icon">
+</head>
+<body>
+
+<header class="sticky">
+<a href="index.html" class="webname">
+<img src="../images/logo-dark.svg" alt="">
+Squirrel<span class="primary-color">Codes</span>
+</a>
+<nav>
+<a href="../index.html">Home</a>
+<a href="dbms1.html" class="active">DBMS</a>
+<a href="../plsql-tutorial/plsql1.html">PL/SQL</a>
+<a href="../about.html" >About</a>
+</nav>
+</header>
+
+<h2 class="center tutorial">DBMS & MySQL Tutorial</h2>
+<hr>
+<div class="content-box">
+    <div class="sidebar">
+        <a class="primary-color">Table of Contents</a>
+        <a href="dbms1.html" class="sidelinks">What is DBMS?</a>
+        <a href="dbms2.html" class="sidelinks">Data Models</a>
+        <a href="dbms3.html" class="sidelinks">Schemas and Instances</a>
+        <a href="dbms4.html" class="sidelinks ">DBMS Architecture</a>
+        <a href="dbms5.html" class="sidelinks">Database Independence</a>
+        <a href="dbms6.html" class="sidelinks">Database Languages</a>
+        <a href="dbms7.html" class="sidelinks">12 Codd's Rule RDBMS</a>
+        <a href="dbms8.html" class="sidelinks">ER Model</a>
+        <a href="dbms9.html" class="sidelinks">MySQL features</a>
+        <a href="dbms10.html" class="sidelinks"> MySQL Database</a>
+        <a href="dbms11.html" class="sidelinks">MySQL Table</a>
+        <a href="dbms12.html" class="sidelinks">MySQL Constraints</a>
+        <a href="dbms13.html" class="sidelinks">DML Commands</a>
+        <a href="dbms14.html" class="sidelinks">MySQL Clauses</a>
+        <a href="dbms15.html" class="sidelinks">MySQL Views</a>
+        <a href="dbms16.html" class="sidelinks">MySQL Conditions</a>
+        <a href="dbms17.html" class="sidelinks sideactive">MySQL Keys</a>
+    </div>
+    <div class="content">
+        <h3 class="main">MySQL Keys</h3>
+<h3>Primary key</h3>
+<p>MySQL primary key is a single or combination of the field, which is used to identify each record in a table uniquely. If the column contains primary key constraints, then it cannot be null or empty. A table may have duplicate columns, but it can contain only one primary key. It always contains unique value into a column.
+</p>
+<p>For example :</p>
+<pre class="code">
+    CREATE TABLE table_name(  
+    column1 datatype PRIMARY KEY,  
+    column2 datatype,  
+    ...  
+);  
+</pre>
+<h3>Foreign Key</h3>
+<p>The foreign key is used to link one or more than one table together. It is also known as the referencing key. A foreign key matches the primary key field of another table. It means a foreign key field in one table refers to the primary key field of the other table. It identifies each row of another table uniquely that maintains the referential integrity in MySQL.</p>
+<p>Syntax :</p>
+<pre class="code">
+    [CONSTRAINT constraint_name]  
+    FOREIGN KEY [foreign_key_name] (col_name, ...)  
+    REFERENCES parent_tbl_name (col_name,...)  
+    ON DELETE referenceOption  
+    ON UPDATE referenceOption  
+</pre>
+<p>Table Employee :</p>
+<pre class="example">
+    CREATE TABLE employee (  
+  ID INT NOT NULL AUTO_INCREMENT,  
+  Name varchar(40) NOT NULL,  
+  Occupation varchar(40) NOT NULL,  
+  PRIMARY KEY (ID)  
+);  
+</pre>
+<p>Table 2 :</p>
+<pre class="example">
+    CREATE TABLE contact (  
+  ID INT,  
+  employee_Id INT,  
+  employee_Info varchar(50) NOT NULL,  
+  Type varchar(50) NOT NULL,  
+  INDEX par_ind (employee_Id),  
+  CONSTRAINT fk_employee FOREIGN KEY (employee_Id)  
+  REFERENCES employee(ID)  
+  ON DELETE CASCADE  
+  ON UPDATE CASCADE  
+);  
+</pre>
+
+<h3>Unique Key</h3>
+<p>A unique key in MySQL is a single field or combination of fields that ensure all values going to store into the column will be unique. It means a column cannot stores duplicate values. For example, the email addresses and roll numbers of students in the "student_info" table or contact number of employees in the "Employee" table should be unique.</p>
+
+<pre class="example">
+    CREATE TABLE table_name(  
+    column1 datatype,  
+    column2 datatype UNIQUE,  
+    ...  
+);  
+</pre>
+<div class="toggle-page-btns">
+<a href="dbms16.html" class="button">&larr; Previous</a>
+
+</div>
+    </div>
+</div>
+<footer>
+    Copyright &copy; 2023 Squirrel<span class="primary-color">Codes</span>
+</footer>
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Squirrel-Codes</title>
+<link rel="stylesheet" href="../index.css">
+<link rel="shortcut icon" href="../images/logo-dark.svg" type="image/x-icon">
+</head>
+<body>
+
+<header class="sticky">
+<a href="index.html" class="webname">
+<img src="../images/logo-dark.svg" alt="">
+Squirrel<span class="primary-color">Codes</span>
+</a>
+<nav>
+<a href="../index.html">Home</a>
+<a href="../dbms-tutorial/dbms1.html" >DBMS</a>
+<a href="plsql1.html" class="active">PL/SQL</a>
+<a href="../about.html" >About</a>
+</nav>
+</header>
+
+<h2 class="center tutorial">PL/SQL Tutorial</h2>
+<hr>
+<div class="content-box">
+    <div class="sidebar">
+        <a class="primary-color">Table of Contents</a>
+        <a href="plsql1.html" class="sidelinks">PL/SQL Introduction</a>
+        <a href="plsql2.html" class="sidelinks">Variables and Consonants</a>
+        <a href="plsql3.html" class="sidelinks sideactive">If-Else in PL/SQL</a>
+        <a href="plsql4.html" class="sidelinks">Loops in PL/SQL</a>
+        <a href="plsql5.html" class="sidelinks">Cursors</a>
+        <a href="plsql6.html" class="sidelinks">Exception handling</a>
+        <a href="plsql7.html" class="sidelinks">Triggers</a>
+    </div>
+    <div class="content">
+ <h3 class="main">If-Else in PL/SQL</h3>
+<p>PL/SQL supports the programming language features like conditional statements and iterative statements. Its programming constructs are similar to how you use in programming languages like Java and C++.</p>
+
+<h3> Syntax for IF Statement: </h3>
+
+<p>There are different syntaxes for the IF-THEN-ELSE statement.</p>
+
+<h3> Syntax: (IF-THEN statement): </h3>
+<pre class="code">
+IF condition   
+THEN   
+Statement: {It is executed when condition is true}  
+END IF;  
+</pre>
+<p>This syntax is used when you want to execute statements only when condition is TRUE.</p>
+<h3> Syntax: (IF-THEN-ELSE statement): </h3>
+<pre class="code">
+IF condition   
+THEN  
+   {...statements to execute when condition is TRUE...}  
+ELSE  
+   {...statements to execute when condition is FALSE...}  
+END IF;   
+</pre>
+<p>This syntax is used when you want to execute one set of statements when condition is TRUE or a different set of statements when condition is FALSE.</p>
+<h3> Syntax: (IF-THEN-ELSIF statement): </h3>
+<pre class="code">
+IF condition1   
+THEN  
+   {...statements to execute when condition1 is TRUE...}  
+ELSIF condition2   
+THEN  
+   {...statements to execute when condition2 is TRUE...}  
+END IF;  
+</pre>
+<p>This syntax is used when you want to execute one set of statements when condition1 is TRUE or a different set of statements when condition2 is TRUE.</p>
+<h3> Syntax: (IF-THEN-ELSIF-ELSE statement):
+<pre class="code">
+IF condition1   
+THEN  
+   {...statements to execute when condition1 is TRUE...}  
+ELSIF condition2   
+THEN  
+   {...statements to execute when condition2 is TRUE...}  
+ELSE  
+   {...statements to execute when both condition1 and condition2 are FALSE...}  
+END IF;  
+</pre>
+<p>For example :
+</p>
+<pre class="example">
+DECLARE  
+   age number(2) := 50;  
+BEGIN  
+   -- check the boolean condition using if statement   
+   IF( age < 20 ) THEN  
+      -- if condition is true then print the following    
+      dbms_output.put_line('age is less than 20 ' );  
+   ELSE  
+      dbms_output.put_line('age is not less than 20 ' );  
+   END IF;  
+   dbms_output.put_line('value of age is : ' || age);  
+END;  
+</pre>
+<h3>Output :</h3>
+<p> age is not less than 20 </p>
+<p> value of age is : 50 </p>
+<p> PL/SQL procedure successfully completed. </p>
+<!-- previous next buttons -->
+<div class="toggle-page-btns">
+<a href="plsql2.html" class="button">&larr; Previous</a>
+<a href="plsql4.html" class="button">Next &rarr;</a>
+</div>
+    </div>
+</div>
+<footer>
+    Copyright &copy; 2023 Squirrel<span class="primary-color">Codes</span>
+</footer>
+</body>
+</html>

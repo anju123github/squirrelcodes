@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Squirrel-Codes</title>
+<link rel="stylesheet" href="../index.css">
+<link rel="shortcut icon" href="../images/logo-dark.svg" type="image/x-icon">
+</head>
+<body>
+
+<header class="sticky">
+<a href="index.html" class="webname">
+<img src="../images/logo-dark.svg" alt="">
+Squirrel<span class="primary-color">Codes</span>
+</a>
+<nav>
+<a href="../index.html">Home</a>
+<a href="dbms1.html" class="active">DBMS</a>
+<a href="../plsql-tutorial/plsql1.html">PL/SQL</a>
+<a href="../about.html" >About</a>
+</nav>
+</header>
+
+<h2 class="center tutorial">DBMS & MySQL Tutorial</h2>
+<hr>
+<div class="content-box">
+    <div class="sidebar">
+        <a class="primary-color">Table of Contents</a>
+        <a href="dbms1.html" class="sidelinks">What is DBMS?</a>
+        <a href="dbms2.html" class="sidelinks">Data Models</a>
+        <a href="dbms3.html" class="sidelinks">Schemas and Instances</a>
+        <a href="dbms4.html" class="sidelinks sideactive">DBMS Architecture</a>
+        <a href="dbms5.html" class="sidelinks">Database Independence</a>
+        <a href="dbms6.html" class="sidelinks">Database Languages</a>
+        <a href="dbms8.html" class="sidelinks">12 Codd's Rule RDBMS</a>
+        <a href="dbms9.html" class="sidelinks">ER Model</a>
+        <a href="dbms10.html" class="sidelinks">MySQL features
+           </a>
+        <a href="dbms11.html" class="sidelinks"> MySQL Database</a>
+        <a href="dbms12.html" class="sidelinks">MySQL Table</a>
+        <a href="dbms13.html" class="sidelinks">MySQL Constraints</a>
+        <a href="dbms14.html" class="sidelinks">DML Commands</a>
+        <a href="dbms15.html" class="sidelinks">MySQL Clauses</a>
+        <a href="dbms16.html" class="sidelinks">MySQL Views</a>
+        <a href="dbms17.html" class="sidelinks">MySQL Conditions</a>
+        <a href="dbms18.html" class="sidelinks">MySQL Keys</a>
+    </div>
+    <div class="content">
+        <h3 class="main">DBMS Architecture</h3>
+        <ul>
+        <li> The data which is stored in the database at a particular moment of time is called an instance of the database.</li>
+        <li> The overall design of a database is called schema.</li>
+        <li> A database schema is the skeleton structure of the database. It represents the logical view of the entire database.</li>
+        <li> A schema contains schema objects like table, foreign key, primary key, views, columns, data types, stored procedure, etc.</li>
+        <li> A database schema can be represented by using the visual diagram. That diagram shows the database objects and relationship with each other.</li>
+        <li> A database schema is designed by the database designers to help programmers whose software will interact with the database. The process of database creation is called data modeling.</li>
+</ul>
+<p>
+<img src="../images/DBMSARCHITECTURE.svg" alt="" style="height:200px;box-shadow: 0 6px 8px rgba(0,0,0,0.1);">
+
+</p>
+<h3>1-Tier Architecture</h3>
+<p> In this architecture, the database is directly available to the user. It means the user can directly sit on the DBMS and uses it.</p>
+<p> Any changes done here will directly be done on the database itself. It doesn't provide a handy tool for end users.</p>
+<p> The 1-Tier architecture is used for development of the local application, where programmers can directly communicate with the database for the quick response.</p>
+<h3>2-Tier Architecture</h3>
+<p> The 2-Tier architecture is same as basic client-server. In the two-tier architecture, applications on the client end can directly communicate with the database at the server side. For this interaction, API's like: ODBC, JDBC are used.</p>
+<p> The user interfaces and application programs are run on the client-side.</p>
+<p> The server side is responsible to provide the functionalities like: query processing and transaction management.</p>
+<p> To communicate with the DBMS, client-side application establishes a connection with the server side.
+</p>
+
+<h3>3-Tier Architecture</h3>
+<p> The 3-Tier architecture contains another layer between the client and server. In this architecture, client can't directly communicate with the server.
+<p> The application on the client-end interacts with an application server which further communicates with the database system.
+<p> End user has no idea about the existence of the database beyond the application server. The database also has no idea about any other user beyond the application.
+<p> The 3-Tier architecture is used in case of large web application.</p>
+<!-- previous next buttons -->
+<div class="toggle-page-btns">
+<a href="dbms3.html" class="button">&larr; Previous</a>
+<a href="dbms5.html" class="button">Next &rarr;</a>
+</div>
+    </div>
+</div>
+<footer>
+    Copyright &copy; 2023 Squirrel<span class="primary-color">Codes</span>
+</footer>
+</body>
+</html>

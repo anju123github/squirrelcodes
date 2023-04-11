@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Squirrel-Codes</title>
+<link rel="stylesheet" href="../index.css">
+<link rel="shortcut icon" href="../images/logo-dark.svg" type="image/x-icon">
+</head>
+<body>
+
+<header class="sticky">
+<a href="index.html" class="webname">
+<img src="../images/logo-dark.svg" alt="">
+Squirrel<span class="primary-color">Codes</span>
+</a>
+<nav>
+<a href="../index.html">Home</a>
+<a href="../dbms-tutorial/dbms1.html" >DBMS</a>
+<a href="plsql1.html" class="active">PL/SQL</a>
+<a href="../about.html" >About</a>
+</nav>
+</header>
+
+<h2 class="center tutorial">PL/SQL Tutorial</h2>
+<hr>
+<div class="content-box">
+    <div class="sidebar">
+        <a class="primary-color">Table of Contents</a>
+        <a href="plsql1.html" class="sidelinks">PL/SQL Introduction</a>
+        <a href="plsql2.html" class="sidelinks">Variables and Consonants</a>
+        <a href="plsql3.html" class="sidelinks">If-Else in PL/SQL</a>
+        <a href="plsql4.html" class="sidelinks sideactive">Loops in PL/SQL</a>
+        <a href="plsql5.html" class="sidelinks">Cursors</a>
+        <a href="plsql6.html" class="sidelinks">Exception handling</a>
+        <a href="plsql7.html" class="sidelinks">Triggers</a>
+    </div>
+    <div class="content">
+ <h3 class="main">Loops in PL/SQL</h3>
+ <p>The PL/SQL loops are used to repeat the execution of one or more statements for specified number of times. These are also known as iterative control statements.</p>
+
+<h3> Syntax for a basic loop:</h3>
+<pre class="code">
+ LOOP  
+   Sequence of statements;  
+ END LOOP; 
+ </pre> 
+ <h3>Types of PL/SQL Loops</h3>
+ 
+ <ul>
+    <li> Basic Loop / Exit Loop</li>
+ <li> While Loop</li>
+ <li> For Loop</li>
+ <li> Cursor For Loop</li>
+ </ul>
+ <p>For example (PL/SQL Exit Loop) :</p>
+ <pre class="example">
+    DECLARE  
+    i NUMBER := 1;  
+    BEGIN  
+    LOOP  
+    EXIT WHEN i>5;  
+    DBMS_OUTPUT.PUT_LINE(i);  
+    i := i+1;  
+    END LOOP;  
+    END;  
+ </pre>
+ <h3>Output : </h3>
+<p>1</p>
+<p>2</p>
+<p>3</p>
+<p>4</p>
+
+<!-- previous next buttons -->
+<div class="toggle-page-btns">
+<a href="plsql3.html" class="button">&larr; Previous</a>
+<a href="plsql5.html" class="button">Next &rarr;</a>
+</div>
+    </div>
+</div>
+<footer>
+    Copyright &copy; 2023 Squirrel<span class="primary-color">Codes</span>
+</footer>
+</body>
+</html>

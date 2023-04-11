@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+body{
+    font-family: "Manrope";
+}
+div.homepage{
+    width:100%;
+    height: 100vh;
+    background-image: url('images/background.svg');
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+}
+a{
+    display: inline-block;
+    text-decoration: none;
+    color: #000;
+}
+.primary-color{
+    color: #FF6701;
+}
+header{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    font-size: 1.1rem;
+    padding:1% 5%;
+}
+header a{
+    color: #fff;
+}
+a.webname{
+    display: flex;
+    align-items: center;
+    width: 50%;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+a.webname img{
+    height: 30px;
+    margin-right: 2%;
+}
+nav{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    font-weight: 600;
+}
+a.active{
+    background: #FF6701;
+    border-radius: 8px;
+    color: #fff;
+}
+nav a{
+    padding: 1% 2%;
+    margin: 0 2%;
+}
+nav a:hover{
+    color: #FF6701;
+}
+nav a.active:hover{
+    color: #fff;
+}
+.webinfo{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 5% 10%;
+}
+.webinfo #theory{
+    width: 50%;
+    margin-right: 3%;
+    color: #fff;
+}
+.webinfo img{
+    width: 50%;
+}
+.webinfo #theory h1{
+    font-size: 2.8rem;
+}
+.webinfo #theory p{
+    margin: 4% 0;
+    font-size: 1.3rem;
+}
+.button{
+    color: #fff;
+    background-color: #FF6701;
+    border-radius: 8px;
+    padding: 1% 2%;
+    font-size: 1.1rem;
+}
+#courses-container{
+    padding-top: 4%;
+}
+.center{
+    text-align: center;
+
+}
+h2{
+    font-weight: 700;
+    font-size: 1.6rem;
+}
+hr{
+    width: 30%;
+    margin: 2% 35%;
+    height: 3px;
+    border: none;
+    background-color: #FF6701;
+}
+.course-grid{
+    display: flex;
+    margin: 4% 0;
+    width: 100%;
+    justify-content: center;
+}
+.course-grid img{
+    width: 30%;
+    margin-right: 3%;
+}
+.course-grid .text{
+    width: 40%;
+}
+.course-grid p{
+    margin: 3% 0;
+    font-size: 2rem;
+}
+footer{
+    background-color: #f3f3f3;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #202249;
+    padding: 2%;
+    text-align: center;
+}
+/* tutorial page code */
+
+header.sticky{
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+header.sticky a{
+    color: #202249;
+}
+h2.tutorial{
+    margin-top: 7%;
+    font-size: 1.9rem;
+}
+.content-box{
+    display: flex;
+    justify-content: center;
+    align-items: first baseline;
+}
+.sidebar{
+    width: 20%;
+    margin-right: 3%;
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+    border: 2px solid #f3f3f3;
+}
+.content-box .content{
+    width: 60%;
+    padding: 2%;
+}
+.sidebar a.primary-color{
+    font-size: 1.7rem;
+    font-weight: 700;
+    margin-bottom: 5%;
+}
+.sidebar a{
+    margin: 2% 0;
+    font-size: 1.1rem;
+    color: #202249;
+    font-weight: 500;
+}
+.sidebar .sideactive{
+    color: #FF6701;
+}
+.content h3{
+    font-size: 1.4rem;
+    color: #202249;
+    margin: 2% 0;
+}
+.content h3.main{
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+.content p,.content li{
+    font-size: 1.1rem;
+    margin: 2% 0;
+}
+.toggle-page-btns{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.toggle-page-btns .button:nth-child(1){
+    margin-right: 2%;
+}
+pre.code{
+    background-color: black;
+    color: white;
+    font-size: 1.1rem;
+    padding: 1%;
+    margin: 2% 0;
+    box-shadow: 0 8px 6px rgba(0, 0, 0, 0.1);
+}
+pre.example{
+    background-color: #fcf3ed;
+    color: #202249;
+    padding: 2%;
+    font-size: 1.1rem;
+    margin: 2% 0;
+}
+.content-box img{
+    margin: 2% 0;
+}
